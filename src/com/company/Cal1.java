@@ -1,13 +1,13 @@
 package com.company;
 
-//метод 1  (калькулятор для строки по типу \\д*,\\д*)
+//метод 1  (калькулятор для строки по типу \\д*,\\д* )
 
 public class Cal1 {
     public static void Add(String str){
 
         int res = 0;
 
-        if(str.matches("^[0-9]*+,*+[0-9]*$") == false){
+        if(str.matches("^([0-9]*+,*+[0-9]*)*$") == false){
             System.out.println("Ваш ввод был неправельным ");
         }else{
             String[] value = str.split(",");
