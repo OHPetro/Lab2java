@@ -1,16 +1,16 @@
 package com.company;
 
-//метод 2  (калькулятор для строки по типу \\д*,\\д* для любого колическва чисел )
+//метод 3  (калькулятор для строки по типу \\д*,\\д* для любого колическва чисел и с любым разделителем)
 
 public class Cal1 {
     public static void Add(String str){
 
         int res = 0;
 
-        if(str.matches("^([0-9]*+,*+[0-9]*)*$") == false){
+        if(str.matches("^([0-9]*+\\D*+[0-9]*)*$") == false){
             System.out.println("Ваш ввод был неправельным ");
         }else{
-            String[] value = str.split(",");
+            String[] value = str.split("\\D+");
             for(int i=0;i<value.length;i++){
                 int strtoint = 0;
                 try{
