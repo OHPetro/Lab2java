@@ -1,6 +1,6 @@
 package com.company;
 
-//метод 1  (калькулятор для строки по типу \\д*,\\д* )
+//метод 2  (калькулятор для строки по типу \\д*,\\д* для любого колическва чисел )
 
 public class Cal1 {
     public static void Add(String str){
