@@ -7,10 +7,10 @@ public class Cal1 {
 
         int res = 0;
 
-        if(str.matches("^([0-9]*+,*)*$") == false){   //упростил
+        if(str.matches("^([0-9]*+(,*|(\\n)*)?)*$") == false){
             System.out.println("Ваш ввод был неправельным ");
         }else{
-            String[] value = str.split(",");
+            String[] value = str.split("\\D+");
             for(int i=0;i<value.length;i++){
                 int strtoint = 0;
                 try{
